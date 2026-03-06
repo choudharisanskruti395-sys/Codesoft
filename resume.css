@@ -1,0 +1,58 @@
+body{
+font-family: Arial, sans-serif;
+background:#f4f4f4;
+margin:0;
+padding:20px;
+}
+
+.resume{
+background:white;
+width:800px;
+margin:auto;
+padding:30px;
+box-shadow:0 0 10px gray;
+}
+
+header{
+text-align:center;
+border-bottom:2px solid #333;
+padding-bottom:15px;
+margin-bottom:20px;
+}
+
+h1{
+margin:0;
+color:#2c3e50;
+}
+
+h2{
+color:#2c3e50;
+border-bottom:1px solid #ccc;
+padding-bottom:5px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th, td{
+padding:10px;
+text-align:center;
+}
+
+ul{
+margin-left:20px;
+}
+
+footer{
+text-align:center;
+margin-top:20px;
+padding-top:10px;
+border-top:1px solid #ccc;
+}
