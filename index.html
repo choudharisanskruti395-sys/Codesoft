@@ -1,102 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Landing Page</title>
+<title>Calculator</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navigation -->
-<header>
-<nav>
-<h2 class="logo">MyWebsite</h2>
+<div class="calculator">
 
-<ul>
-<li><a href="home.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="service.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<input type="text" id="display" disabled>
 
-</nav>
-</header>
+<div class="buttons">
 
-<!-- Hero Section -->
-<section class="hero">
+<button onclick="clearDisplay()">C</button>
+<button onclick="deleteLast()">⌫</button>
+<button onclick="appendValue('/')">/</button>
+<button onclick="appendValue('*')">*</button>
 
-<div class="hero-text">
-<h1>Create Your Amazing Website</h1>
-<p>
-    WELCOME TO WEBSITE
-</p>
+<button onclick="appendValue('7')">7</button>
+<button onclick="appendValue('8')">8</button>
+<button onclick="appendValue('9')">9</button>
+<button onclick="appendValue('-')">-</button>
 
-<button>Get Started</button>
-</div>
+<button onclick="appendValue('4')">4</button>
+<button onclick="appendValue('5')">5</button>
+<button onclick="appendValue('6')">6</button>
+<button onclick="appendValue('+')">+</button>
 
-<div class="hero-image">
-<img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png">
-</div>
+<button onclick="appendValue('1')">1</button>
+<button onclick="appendValue('2')">2</button>
+<button onclick="appendValue('3')">3</button>
+<button class="equal" onclick="calculate()">=</button>
 
-</section>
+<button onclick="appendValue('0')" class="zero">0</button>
+<button onclick="appendValue('.')">.</button>
 
-<!-- Features Section -->
-<section class="features">
-
-<h2>Our Features</h2>
-
-<div class="feature-container">
-
-<div class="box">
-<h3>Easy Design</h3>
-<p>Create beautiful layouts using HTML and CSS.</p>
-</div>
-
-<div class="box">
-<h3>Responsive</h3>
-<p>Works perfectly on mobile, tablet and desktop.</p>
-</div>
-
-<div class="box">
-<h3>Modern Layout</h3>
-<p>Clean and professional web page structure.</p>
 </div>
 
 </div>
 
-</section>
-
-<!-- About Section -->
-<section class="about">
-
-<h2>About Our Website</h2>
-
-<p>
-This landing page demonstrates how HTML and CSS can be used
-to create professional website layouts with proper sections,
-alignment, padding, colors and content structure.
-</p>
-
-</section>
-
-<!-- Contact Section -->
-<section class="contact">
-
-<h2>Contact Us</h2>
-
-<p>Email: info@website.com</p>
-<p>Phone: +91 9876543210</p>
-
-</section>
-
-<!-- Footer -->
-<footer>
-
-<p>© 2026 MyWebsite | All Rights Reserved</p>
-
-</footer>
+<script src="script.js"></script>
 
 </body>
 </html>
